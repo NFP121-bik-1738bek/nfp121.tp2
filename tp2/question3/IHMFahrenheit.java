@@ -31,17 +31,25 @@ public class IHMFahrenheit extends JFrame implements ActionListener{
    * @param ae l'événement transmis
    */
   public void actionPerformed( ActionEvent ae ){
-    try{
-      int fahrenheit = 0; // valeur est une String et doit être convertie en entier, voir java.lang.Integer méthode parseInt (--> try/catch)
-      float celsius = 0F; // à compléter, en appelant la méthode ad'hoc de la question2 
-      // un test ici pour le zéro absolu (-273.1)
-
-      sortie.setText( Float.toString( celsius));
-    }catch(NumberFormatException nfe){
-      sortie.setText("error ! ");
-    }
+      try{
+          int fahrenheit = Integer.parseInt(entree.getText());
+          float celsius = fahrenheitEnCelsius(fahrenheit);
+          
+          if(celsius < -273.1F) {
+              celsius = -273.1F;
+            }
+            
+          sortie.setText(Float.toString(celsius));
+        } catch(NumberFormatException nfe){
+            sortie.setText("error ! ");
+        }
   }
   
+  public static float fahrenheitEnCelsius( int f) {
+       double celsius = (5.0/9) * (f - 32);
+       celsius = ((int)(celsius*10))/10.0;
+       return (float)celsius;
+    }
   
   public static void main(String[] args){
       new IHMFahrenheit();

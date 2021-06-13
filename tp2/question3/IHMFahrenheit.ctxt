@@ -1,8 +1,12 @@
 #BlueJ class context
-comment0.target=IHMFahrenheit()
-comment1.params=ae
-comment1.target=void\ actionPerformed(ActionEvent)
-comment1.text=\nm\u00E9thode\ d\u00E9clench\u00E9e\ lorsque\ le\ bouton\ de\ conversion\ est\ appuy\u00E9.\ \nremarquer\ que\ le\ champs\ de\ droite\ (les\ degr\u00E9s\ Celsius)\ n'est\ pas\ \u00E9ditable.\n@param\ ae\ l'\u00E9v\u00E9nement\ transmis\n\n
-comment2.params=args
-comment2.target=void\ main(String[])
-numComments=3
+comment0.target=IHMFahrenheit
+comment1.params=
+comment1.target=IHMFahrenheit()
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=\ \n\ m\u00E9thode\ d\u00E9clench\u00E9e\ lorsque\ le\ bouton\ de\ conversion\ est\ appuy\u00E9.\ \n\ remarquer\ que\ le\ champs\ de\ droite\ (les\ degr\u00E9s\ Celsius)\ n'est\ pas\ \u00E9ditable.\n\ @param\ ae\ l'\u00E9v\u00E9nement\ transmis\n
+comment3.params=f
+comment3.target=float\ fahrenheitEnCelsius(int)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
